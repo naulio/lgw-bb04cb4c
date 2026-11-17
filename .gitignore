@@ -1,0 +1,4 @@
+raw/
+.claude/
+i18n/chunks/
+__pycache__/

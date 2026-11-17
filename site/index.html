@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Linggango Wiki</title>
+<meta name="description" content="Linggango modpack wiki — getting started, bosses, progression, treasure bags and mods. En français et en anglais.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0c0a13">
+<meta name="color-scheme" content="dark light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Linggango">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/img/Site-favicon.ico">
+<link rel="apple-touch-icon" href="assets/img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="assets/img/banner-900.webp" imagesrcset="assets/img/banner-900.webp 900w, assets/img/banner-1600.webp 1600w" imagesizes="(max-width: 1080px) 100vw, 55vw">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,400&family=Pixelify+Sans:wght@400..700&display=swap">
+<link rel="stylesheet" href="styles.css?v=12">
+<script>
+  try {
+    var s = JSON.parse(localStorage.getItem("lgw.settings") || "{}"), R = document.documentElement;
+    var t = s.theme || "dark";
+    if (t === "auto") t = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    R.dataset.theme = t;
+    if (s.size) R.dataset.size = s.size;
+    R.dataset.font = s.font || "titles";
+    R.lang = s.lang || (/^fr/i.test(navigator.language) ? "fr" : "en");
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#app">Skip</a>
+<header class="topbar">
+  <a class="brand" href="#/" aria-label="Linggango Wiki">
+    <img src="assets/img/logo-96.webp" alt="" width="34" height="34">
+    <span><b>Linggango</b> <small>Wiki</small></span>
+  </a>
+  <nav class="nav" id="topnav" aria-label="Sections"></nav>
+  <div class="top-actions">
+    <button class="search-btn" id="searchBtn" aria-label="Search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+      <span>Search</span><kbd>Ctrl K</kbd>
+    </button>
+    <button class="lang-btn" id="langBtn">FR</button>
+    <button class="journey" id="journeyBtn" aria-label="Progress">
+      <svg viewBox="0 0 36 36"><circle class="track" cx="18" cy="18" r="14" fill="none" stroke-width="4"/><circle class="fill" id="journeyRing" cx="18" cy="18" r="14" fill="none" stroke-width="4"/></svg>
+      <span id="journeyTxt">0/0</span>
+    </button>
+    <button class="icon-btn" id="settingsBtn" aria-label="Settings">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+    </button>
+  </div>
+</header>
+<div class="read-progress" id="readProgress"></div>
+<main id="app" tabindex="-1"></main>
+<nav class="tabbar" id="tabbar" aria-label="Navigation"></nav>
+
+<script src="data/wiki-data.js?v=12" defer></script>
+<script src="fx.js?v=12" defer></script>
+<script src="app.js?v=12" defer></script>
+</body>
+</html>

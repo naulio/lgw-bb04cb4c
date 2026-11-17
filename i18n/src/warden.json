@@ -1,0 +1,18 @@
+[
+"Warden",
+"About",
+"What stage the boss is and the number in the journey if known.",
+"Lore of the Warden",
+"\"In the depths of the Deep Dark, the Warden rises from the sculk when shriekers cry out. Blind but relentless, it hunts by sound and scent, striking fear into any who trespass. Some believe it is a guardian of forgotten cities, a sentinel left behind by an ancient people. Whether beast or protector, its presence is a warning: the Deep Dark is not meant for the living.",
+"Where to find the Warden",
+"You’ll encounter the Warden deep underground in the Deep Dark biome, which generates below Y‑level 0. It doesn’t spawn naturally like other mobs- instead, it emerges when a sculk shrieker is activated multiple times.",
+"Drops",
+"List what items can be dropped",
+"Attributes",
+"Health",
+"Types of Attack",
+"Attack",
+"Description",
+"Has a cooldown of 0.9 seconds that disables shields for 5 seconds, dealing 16 damage to 45 damage points, depending on the difficulty.",
+"A ranged attack that is impossible to dodge, passing through blocks and other mobs without damaging them. A warden takes 1.7 seconds to charge and unleashes the attack, which instantly hits the target as long as the target is within attack range. Deals 6-15 damage points, depending on difficulty"
+]

@@ -1,0 +1,11 @@
+[
+"How to update Treasure Bags",
+"<br/> How to update loot tables:",
+"Create empty Java project",
+"Copy Armageddon mod .jar file to the project",
+"Menu &gt; Project Structure &gt; Libraries &gt; \"Plus sign\" &gt; Java &gt; Select Armageddon mod .jar file",
+"Expand .jar file to net &gt; mcreator &gt; armageddonmod &gt; procedures",
+"Manually iterate over each file that has `TreasureBagRightClick` in it's name",
+"Read code to understand drops and chances",
+"Use <a class=\"external ext\" href=\"https://linkie.shedaniel.dev/mappings?namespace=mojang_srg&amp;version=1.20.1&amp;search=f_151050_&amp;translateMode=none\" rel=\"noopener\" target=\"_blank\">Mappings</a> to translate variables to their name i.e Items.f_151050_ is actually Items.RAW_IRON"
+]
